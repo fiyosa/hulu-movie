@@ -1,6 +1,12 @@
 const API_KEY = process.env.API_KEY;
 
-const myAPI = {
+interface APIOptions {
+  [key: string]: {
+    title: string;
+    url: string;
+  };
+}
+const myAPI: APIOptions = {
   fetchTrending: {
     title: "Trending",
     url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
