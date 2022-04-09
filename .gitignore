@@ -33,3 +33,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# My Env
+.env
+pnpm-lock.yaml
